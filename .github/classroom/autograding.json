@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Rust",
+      "setup": "cargo build",
+      "run": "cargo install --path .",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 3,
+      "points": null
+    },
+    {
+      "name": "Install Testing",
+      "setup": "git submodule update --init && cd tests && git checkout main && git pull",
+      "run": "cd tests && npm install",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Run All",
+      "setup": "",
+      "run": "cd tests && ./run_all.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
