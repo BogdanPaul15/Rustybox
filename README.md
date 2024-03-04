@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/iYoQzOhX)
 # Rustybox
 For this homework I've used only standard rust libraries and regex library in order to implement grep.
 In the main function, I get all of the arguments provided in the command line and match with the specific function. In case of error, I return the specific error code of the command using <span style="color: red;">**std::process::exit(code)**</span>. If the argument provided is not a function that was implemented for this homework, I simply print the message "**Invalid command**" and return exit code -1. If the command provided doesn't return any error, it returns 0.
